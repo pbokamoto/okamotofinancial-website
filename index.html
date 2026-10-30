@@ -315,9 +315,11 @@
           </div>
         </div>
         <!-- お問い合わせフォーム
-             TODO: 送信サービス（Formspree など）を設定したら、action に送信先URLを入れる。
-             action が空のあいだは、入力内容をメールソフトで開いて送る仕組みで動きます（js/main.js）。 -->
-        <form id="contact-form" class="contact-form" action="" method="POST" data-mailto="info@okamotofinancial.jp" novalidate>
+             送信先は Formspree（info@okamotofinancial.jp 宛てに届く）。送信処理は js/main.js。
+             action を空にすると、入力内容をメールソフトで開いて送る仕組みに戻ります。 -->
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/mkjjzady" method="POST" data-mailto="info@okamotofinancial.jp" novalidate>
+          <input type="hidden" name="_subject" value="【HPお問い合わせ】オカモトフィナンシャル">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
           <p class="form-lead">フォームからも、お気軽にお問い合わせください。</p>
           <div class="form-row">
             <label for="f-name">お名前<span class="req">必須</span></label>

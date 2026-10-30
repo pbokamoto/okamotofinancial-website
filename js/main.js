@@ -40,6 +40,8 @@ if (form) {
       return;
     }
 
+    // 返信ボタンでお客様のアドレスに返せるようにする
+    data.append('_replyto', data.get('メールアドレス'));
     const button = form.querySelector('.form-submit');
     button.disabled = true;
     try {
