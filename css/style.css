@@ -440,7 +440,7 @@ body { letter-spacing: .04em; }
 }
 
 /* 片側だけ色を敷いた背景 */
-#difference, .company { background: linear-gradient(90deg, #fff 0 36%, var(--bg-alt) 36% 100%); }
+#difference, .company { background: var(--bg-alt); }
 
 /* 事務所概要 */
 .company-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; align-items: start; }
